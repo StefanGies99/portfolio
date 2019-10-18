@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="flex h-screen w-screen items-center justify-center">
+    <div class="flex h-screen w-full items-center justify-center">
       <div>
         <div class="text-6xl font-bold font-sans text-white">
           Hi, I'm <a href="https://www.linkedin.com/in/stefan-gies-85572712a" class="text-purple-700">Stefan</a> 👋
@@ -17,12 +17,12 @@
         </button>
       </div>
     </div>
-    <div class="h-screen w-screen text-center mt-10 font-sans font-bold">
+    <div class="h-screen w-full text-center mt-10 font-sans font-bold">
       <div class="text-6xl text-white">
         Projects
       </div>
       <div class="flex flex-wrap justify-around text-black xl:p-10 lg:p-10">
-        <div v-for="project in projects" v-bind:key="project.id" class="xl:w-1/3 lg:w-1/2 md:1/2 sm:w-full w-full h-384 p-4 " >
+        <div v-for="project in projects" v-bind:key="project.id" class="xl:w-1/3 lg:w-1/2 md:1/2 sm:w-full w-full h-384 p-4" >
           <div class="h-full rounded-lg bg-center bg-cover" :style="{ backgroundImage: 'url(' + require('../assets/img/'+ project.image) + ')' }">
             <div class="mt-10">
               <span v-for="tag in project.tags" v-bind:key="tag" class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mt-4">{{tag}}</span>
@@ -30,9 +30,15 @@
           </div>
         </div>
       </div>
-      <div class="h-screen w-screen text-center mt-10 font-sans font-bold">
-        <div class="text-6xl text-white">
+      <div class="h-screen w-full text-center mt-10 font-sans font-bold text-white">
+        <div class="text-6xl">
           Contact
+        </div>
+        <div>
+          <button class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center">
+            <span>Mail</span>
+            <svg class="fill-current w-5 h-5 ml-1" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M0 10l9.167 2.583L15 5.833 8.203 10.56 4.61 9.558l12.802-6.4L14.1 15.3l-3.125-2.783-1.808 2.438v-.64L7.5 13.847V20l3.727-5.026L15 18.334 20 0z"/></svg>
+          </button>
         </div>
       </div>
     </div>
@@ -70,7 +76,7 @@ export default {
         {
           id: 3,
           title: 'Next level dining case',
-          image: 'Stock.png',
+          image: 'Dining.png',
           tags: [
             'react',
             'redux',
@@ -80,7 +86,7 @@ export default {
         {
           id: 4,
           title: 'Internship @ Drieam',
-          image: 'Stock.png',
+          image: 'Kubernetes.png',
           tags: [
             'kubernetes',
             'helm.io',
@@ -92,7 +98,7 @@ export default {
         {
           id: 5,
           title: 'Pharmacy application',
-          image: 'Stock.png',
+          image: 'Zonnevelt.png',
           tags: [
             'vue.js',
             'spring boot'
@@ -101,10 +107,9 @@ export default {
         {
           id: 6,
           title: 'Git',
-          image: 'Stock.png',
+          image: 'Github.png',
           tags: [
-            'https://github.com/gieforce',
-            'https://gitlab.com/stefangies'
+            'https://github.com/gieforce'
           ]
         }
       ]
@@ -121,6 +126,7 @@ export default {
 */
 
 body {
-  @apply bg-black
+  @apply bg-black;
+  margin: 0;
 }
 </style>
