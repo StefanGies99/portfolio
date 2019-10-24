@@ -54,7 +54,7 @@ export default {
         {
           id: 1,
           title: 'Stock/r',
-          image: 'Stock.png',
+          image: 'Stock.jpg',
           tags: [
             'vue.js',
             'nest.js',
@@ -65,7 +65,7 @@ export default {
         {
           id: 2,
           title: 'Open remote case',
-          image: 'Openremote.png',
+          image: 'Openremote.jpg',
           tags: [
             'vue.js',
             'deck.gl',
@@ -76,7 +76,7 @@ export default {
         {
           id: 3,
           title: 'Next level dining case',
-          image: 'Dining.png',
+          image: 'Dining.jpg',
           tags: [
             'react',
             'redux',
@@ -86,7 +86,7 @@ export default {
         {
           id: 4,
           title: 'Internship @ Drieam',
-          image: 'Kubernetes.png',
+          image: 'Kubernetes.jpg',
           tags: [
             'kubernetes',
             'helm.io',
@@ -98,7 +98,7 @@ export default {
         {
           id: 5,
           title: 'Pharmacy application',
-          image: 'Zonnevelt.png',
+          image: 'Zonnevelt.jpg',
           tags: [
             'vue.js',
             'spring boot'
@@ -107,7 +107,7 @@ export default {
         {
           id: 6,
           title: 'Git',
-          image: 'Github.png',
+          image: 'Github.jpg',
           tags: [
             'https://github.com/gieforce'
           ]
