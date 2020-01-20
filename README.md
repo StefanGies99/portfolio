@@ -1,22 +1,26 @@
-# portfolio
+# Portfolio
 
-> Portfolio site of Stefan Gies
+Here is my open source portfolio site with projects I have been doing over the years. 
 
-## Build Setup
+# Installation
 
-``` bash
-# install dependencies
-$ npm run install
+To install dependencies and run this project on your own you can install it with npm or yarn
 
-# serve with hot reload at localhost:3000
-$ npm run dev
-
-# build for production and launch server
-$ npm run build
-$ npm run start
-
-# generate static project
-$ npm run generate
+```bash
+npm install / yarn (install)
 ```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+Used tooling:
+- Vue
+- Vue Carousel
+- Nuxt
+
+## Screenshots
+
+Frontpage:
+
+![Frontpage](screenshots/frontpage.png)
+
+Details: 
+
+![Details](screenshots/details.png)
